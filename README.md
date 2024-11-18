@@ -2,7 +2,7 @@
 
 This is my attempt at creating a digital version of cards against humanity. 
 
-Play it **[HERE](https://utterly-flummoxed.github.io/Misanthrocards/)**.
+Play it **[HERE](https://kay-who-codes.github.io/Misanthrocards/)**.
 
 Each player uses their own device to generate cards, and use the generated cards to play the game together irl.
 
