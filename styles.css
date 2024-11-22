@@ -1,10 +1,10 @@
 /* Reset iOS button styling */
 button {
-  -webkit-appearance: none; /* Removes default button styling on iOS */
+  -webkit-appearance: none;
   appearance: none;
-  border: none; /* Ensures custom borders apply */
+  border: none;
   background: none;
-  padding: 0; /* Removes default padding */
+  padding: 0;
 }
 
 body {
@@ -12,17 +12,24 @@ body {
   text-align: center;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensures the body takes the full height of the viewport */
+}
+
+.content-wrapper {
+  flex: 1; /* Pushes the footer to the bottom if content is small */
 }
 
 #main-menu button {
-  width: 150px; /* Square shape with equal width and height */
+  width: 150px;
   height: 150px;
-  font-size: 18px; /* Larger font for main buttons */
+  font-size: 18px;
   font-weight: bold;
   margin: 20px;
   cursor: pointer;
-  border: 2px solid transparent; /* Initial border style */
-  border-radius: 8px; /* Rounded corners */
+  border: 2px solid transparent;
+  border-radius: 8px;
 }
 
 #main-menu .draw-black-card {
@@ -34,7 +41,7 @@ body {
 #main-menu .draw-white-cards {
   background-color: #fff;
   color: #000;
-  border: 2px solid #000; /* Black outline */
+  border: 2px solid #000;
 }
 
 #cards-container {
@@ -65,11 +72,7 @@ body {
 .credit-message {
   font-size: 14px;
   color: #666;
-  margin-top: 20px;
-  position: fixed;
-  bottom: 10px;
-  left: 0;
-  right: 0;
+  padding: 10px 0;
   text-align: center;
 }
 
