@@ -7,26 +7,27 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <div class="content-wrapper">
+    <!-- Main Menu -->
+    <div id="main-menu">
+      <h1>Cards Against Humanity</h1>
 
-  <!-- Main Menu -->
-  <div id="main-menu">
-    <h1>Cards Against Humanity</h1>
+      <!-- Draw Buttons -->
+      <button class="draw-black-card" onclick="drawBlackCard()">Draw Black Card</button>
+      <button class="draw-white-cards" onclick="drawWhiteCards()">Draw White Cards</button>
 
-    <!-- Draw Buttons -->
-    <button class="draw-black-card" onclick="drawBlackCard()">Draw Black Card</button>
-    <button class="draw-white-cards" onclick="drawWhiteCards()">Draw White Cards</button>
+      <!-- Deck Selection Dropdown -->
+      <label for="pack-selection">Select Decks:</label>
+      <select id="pack-selection" multiple>
+      </select>
+    </div>
 
-    <!-- Deck Selection Dropdown -->
-    <label for="pack-selection">Select Decks:</label>
-    <select id="pack-selection" multiple>
-    </select>
-  </div>
-
-  <!-- Card Display -->
-  <div id="card-display" style="display: none;">
-    <h2>Drawn Cards</h2>
-    <div id="cards-container"></div>
-    <button onclick="returnToMenu()">Back to Menu</button>
+    <!-- Card Display -->
+    <div id="card-display" style="display: none;">
+      <h2>Drawn Cards</h2>
+      <div id="cards-container"></div>
+      <button onclick="returnToMenu()">Back to Menu</button>
+    </div>
   </div>
 
   <!-- Footer for Credit Message -->
