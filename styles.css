@@ -61,23 +61,16 @@ body {
   color: #fff;
 }
 
-/* Footer styling */
-.credit-message {
-  font-size: 14px;
-  color: #666;
-  margin-top: 20px;
-  position: fixed;
-  bottom: 10px;
-  left: 0;
-  right: 0;
-  text-align: center;
-}
-
-.credit-message a {
-  color: #007bff;
+footer a {
+  color: #007BFF;
   text-decoration: none;
+  font-weight: bold;
 }
 
-.credit-message a:hover {
+footer a:hover {
   text-decoration: underline;
+}
+
+h2, p {
+  margin-bottom: 10px;
 }
